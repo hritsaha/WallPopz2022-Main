@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#E5E5E6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/categoriesF"
+        android:icon="@drawable/ic_categories_fig"
+        app:cnb_iconColor="@color/white"
+        android:title="Categories">
+
+    </item>
+
+    <item
+        android:id="@+id/homeF"
+        android:icon="@drawable/ic_home_fig"
+        app:cnb_iconColor="@color/white"
+        android:title="Home">
+
+    </item>
+
+    <item
+        android:id="@+id/trendingF"
+        android:icon="@drawable/ic_trending_fig"
+        app:cnb_iconColor="@color/white"
+        android:title="Trending">
+
+    </item>
+
+    <item
+        android:id="@+id/downloadsF"
+        android:icon="@drawable/ic_download_fig"
+        app:cnb_iconColor="@color/white"
+        android:title="Downloads">
+
+    </item>
+
+</menu>

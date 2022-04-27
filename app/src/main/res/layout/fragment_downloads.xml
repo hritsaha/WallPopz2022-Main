@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fig_bg"
+    android:gravity="center"
+    tools:context=".fragments.DownloadsFragment">
+
+    <LinearLayout
+        android:id="@+id/titlebar_download"
+        android:orientation="vertical"
+        android:background="@color/titlebar"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:text="Downloads"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/main_text"
+            android:fontFamily="@font/gilroy_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/downloads_number_text"
+            android:text="No Downloads"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/main_text"
+            android:fontFamily="@font/gilroy_light"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/downloadwallRv"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:layout_below="@id/titlebar_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

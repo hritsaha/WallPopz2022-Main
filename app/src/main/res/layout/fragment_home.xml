@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fig_bg"
+    android:layout_gravity="center"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/titlebar"
+            android:layout_alignParentTop="true"
+            android:background="@color/titlebar"
+            android:gravity="center_vertical"
+            android:elevation="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/align_left"
+                app:tint="@color/main_text"
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+            </ImageView>
+
+            <TextView
+                android:text="Wall Pops"
+                android:gravity="center"
+                android:layout_marginRight="36dp"
+                android:textSize="24sp"
+                android:textColor="@color/main_text"
+                android:fontFamily="@font/oleoscript_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:id="@+id/bestofthemonth_layout"
+            android:layout_below="@id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/fig_primary_accent"
+                    android:background="@drawable/rounded_corners_all"
+                    android:layout_width="7dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+                <TextView
+                    android:text="Best of the Month"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/main_text"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bomRv"
+                android:scrollIndicators="none"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/colour_layout"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:layout_below="@id/bestofthemonth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/fig_primary_accent"
+                    android:background="@drawable/rounded_corners_all"
+                    android:layout_width="7dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="Color"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/main_text"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/colorRv"
+                android:scrollIndicators="none"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

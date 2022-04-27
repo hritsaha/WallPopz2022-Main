@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fig_bg"
+    tools:context=".ViewWallActivity">
+
+
+
+    <ImageView
+        android:id="@+id/my_wall_view"
+        android:background="@drawable/rounded_corner_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/view_back_button"
+        android:layout_margin="20dp"
+        android:padding="9dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15dp"
+        android:elevation="16dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/view_download_button"
+                android:padding="10dp"
+                android:src="@drawable/ic_download_fig_2"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/fig_primary_accent"
+                android:background="@drawable/rounded_corner_20"
+                android:layout_width="53dp"
+                android:layout_height="53dp">
+
+            </ImageView>
+
+            <TextView
+                android:text="Download"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gilroy_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/view_set_wallpaper_button"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/fig_primary_accent"
+                android:src="@drawable/ic_set_fig"
+                android:background="@drawable/rounded_corner_20"
+                android:layout_width="53dp"
+                android:layout_height="53dp">
+
+            </ImageView>
+
+            <TextView
+                android:text="Set"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gilroy_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/view_share_button"
+                android:padding="13dp"
+                android:src="@drawable/ic_share_fig"
+                android:elevation="10dp"
+                android:outlineSpotShadowColor="@color/fig_primary_accent"
+                android:background="@drawable/rounded_corner_20"
+                android:layout_width="53dp"
+                android:layout_height="53dp">
+
+            </ImageView>
+
+            <TextView
+                android:text="Share"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gilroy_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

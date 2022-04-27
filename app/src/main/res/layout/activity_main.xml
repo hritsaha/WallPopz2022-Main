@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fig_bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_main"
+        android:layout_above="@id/my_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/my_bottom_nav"-->
+<!--        android:background="@drawable/bottombg"-->
+<!--        app:itemIconTint="@color/temp_yellow"-->
+<!--        app:itemTextColor="@color/temp_yellow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:elevation="10dp"-->
+<!--        app:menu="@menu/menu">-->
+
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/my_bottom_nav"
+        android:theme="@style/BNBStyle"
+        android:padding="4dp"
+        android:elevation="16dp"
+        android:backgroundTint="@color/fig_primary_accent"
+        android:background="@drawable/bottombg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/menu">
+
+    </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+</RelativeLayout>
