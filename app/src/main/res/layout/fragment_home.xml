@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:orientation="horizontal"
             android:id="@+id/titlebar"
             android:layout_alignParentTop="true"
@@ -22,28 +22,29 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-            <ImageView
-                android:layout_marginLeft="16dp"
-                android:src="@drawable/align_left"
-                app:tint="@color/main_text"
-                android:layout_width="32dp"
-                android:layout_height="32dp">
-
-            </ImageView>
-
             <TextView
                 android:text="Wall Pops"
-                android:gravity="center"
-                android:layout_marginRight="36dp"
+                android:layout_marginTop="10dp"
                 android:textSize="24sp"
+                android:layout_centerInParent="true"
                 android:textColor="@color/main_text"
                 android:fontFamily="@font/oleoscript_regular"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
             </TextView>
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/dark_light_mode"
+                app:tint="@color/main_text"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="23dp"
+                android:layout_height="23dp">
+
+            </ImageView>
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_marginTop="14dp"

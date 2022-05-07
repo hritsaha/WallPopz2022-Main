@@ -9,7 +9,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import java.io.File
 
-class WallpaperRepository {
+class  WallpaperRepository {
     val firestore = FirebaseFirestore.getInstance()
 
      suspend fun getBOMList(liveData : MutableLiveData<List<WallData>>) {
@@ -35,7 +35,7 @@ class WallpaperRepository {
 
 
     suspend fun getCategoriesList(liveData: MutableLiveData<List<CategoryData>>){
-        firestore.collection("categories").orderBy("id",Query.Direction.ASCENDING).addSnapshotListener { value, error ->
+        firestore.collection("categories").orderBy("id", Query.Direction.DESCENDING).addSnapshotListener { value, error ->
             val data=value?.toObjects(CategoryData::class.java)
             liveData.postValue(data!!)
         }
@@ -43,7 +43,7 @@ class WallpaperRepository {
 
 
     suspend fun getTrendingWallList(liveData: MutableLiveData<List<TrendingData>>){
-        firestore.collection("trending").orderBy("id",Query.Direction.DESCENDING).addSnapshotListener { value, error ->
+        firestore.collection("trending").orderBy("id", Query.Direction.DESCENDING).addSnapshotListener { value, error ->
             val data = value?.toObjects(TrendingData::class.java)
             liveData.postValue(data!!)
         }
