@@ -10,7 +10,7 @@
 
     <TextView
         android:layout_centerInParent="true"
-        android:text="WallPops"
+        android:text="WallPopz"
         android:textSize="50sp"
         android:fontFamily="@font/oleoscriptswashcaps_bold"
         android:textColor="@color/white"

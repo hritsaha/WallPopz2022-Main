@@ -25,6 +25,8 @@
 <!--    figma color choices-->
 <!--    7149F3-->
 <!--    4646C1-->
+
+<!--    4646C1-->
     <color name="fig_primary_accent">#4646C1</color>
     <color name="fig_primary_accent_dark">#4646C1</color>
     <color name="fig_bg">#ffff</color>

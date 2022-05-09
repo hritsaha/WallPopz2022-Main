@@ -9,6 +9,7 @@
 
     <ImageView
         android:id="@+id/my_wall_view_downloaded"
+        android:background="@drawable/ic_unloaded_image_bg_fig"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
